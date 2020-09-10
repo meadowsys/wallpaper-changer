@@ -5,8 +5,8 @@ import { resolve } from "path";
 // import { determinenames } from "./rando";
 
 let unit: "minute" | "hour";
-if (!checkenv("NODE_ENV") || process.env.NODE_ENV === "dev" || process.env.NODE_ENV === "development") unit = "minute";
-else unit = "hour";
+if (!checkenv("NODE_ENV") || process.env.NODE_ENV === "prod" || process.env.NODE_ENV === "production") unit = "hour";
+else unit = "minute";
 
 mainfn();
 // get which hour of the day it is
