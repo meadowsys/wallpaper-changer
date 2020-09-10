@@ -8,7 +8,6 @@ let unit: "minute" | "hour";
 if (!checkenv("NODE_ENV") || process.env.NODE_ENV === "dev" || process.env.NODE_ENV === "development") unit = "minute";
 else unit = "hour";
 
-console.log(process.env.NODE_ENV);
 mainfn();
 // get which hour of the day it is
 // get end of hour
@@ -17,10 +16,7 @@ mainfn();
 
 
 function mainfn(): void {
-   const hour: number = moment().get(unit);
-   exec(`gsettings set org.cinnamon.desktop.background picture-uri \"file://${resolve(__dirname, "../wallpapers", `${hour}.png`)}\"`);
-   console.log(`gsettings set org.cinnamon.desktop.background picture-uri \"file://${resolve(__dirname, "../wallpapers", `${hour}.png`)}\"`);
-   console.log(hour);
+   exec(`gsettings set org.cinnamon.desktop.background picture-uri \"file://${resolve(__dirname, "../wallpapers", `${moment().get(unit)}.png`)}\"`);
    setTimeout(mainfn, getnexttime());
 }
 
