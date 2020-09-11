@@ -22,7 +22,7 @@ Might make this better later idk.
 7. Comment: whatever you want, also for your own purposes
 8. Startup delay: I put 0, but if you want to delay it (if you have a lot of startup programs maybe) you can put it higher.
 9. click "add"
-10. On next start, it will start and run in the background.
+10. On next system start, it will start and run in the background.
 
 ## run (in a terminal)
 1. clone and setup the repository
