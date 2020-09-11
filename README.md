@@ -3,6 +3,10 @@ a dinky thing that can run at startup and changes your wallpaper at each full ho
 
 Might make this better later idk.
 
+## System Requirements
+node >14.0.0, npm comes with node, Linux Mint Cinnamon (20, but might work with other versions of Mint Cinnamon)
+my setup: node 14.10.0, npm 6.14.8, Linux Mint 20 Cinnamon, Cinnamon version 4.6.7
+
 ## clone and setup the repository
 1. `git clone https://github.com/pcelestia/wallpaper-changer.git`, then `cd wallpaper-changer`
 2. `npm ci`
