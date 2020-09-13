@@ -39,3 +39,4 @@ You can do it at any time. If you do it, the clock turns to the full hour, and t
 - detect when images change and update them (maybe)
 - support for other image formats
 - detect naming scheme automatically
+- auto updates (maybe)
